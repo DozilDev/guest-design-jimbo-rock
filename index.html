@@ -37,7 +37,7 @@
 <body class="bg-primary">
   <nav class="max-w-6xl mx-auto">
     <img class="mx-auto p-10" src="./assets/images/TR_logo 1.png" alt="logo" width="500" />
-    <div class="flex justify-between text-nav border-y border-text uppercase font-medium p-4 inter">
+    <div class="justify-between text-nav border-y border-text uppercase font-medium p-4 inter flex-wrap flex">
       <a>HOME </a>
       <a>GENRE</a>
       <a>MERCH </a>
@@ -47,13 +47,13 @@
     </div>
   </nav>
   <main>
-    <section class="bg-primary flex items-center gap-4 max-w-6xl mx-auto">
-      <div class="w-2/3">
+    <section class="bg-primary flex items-center gap-4 max-w-6xl mx-auto flex-col md:flex-row">
+      <div class="md:w-2/3 w-full">
         <img class="w-full" src="./assets/images/hero1.png" alt="music-group" />
       </div>
-      <div class="w-1/3 space-y-4">
+      <div class="md:w-1/3 w-full space-y-4 text-center md:text-left">
         <p class="pb-4 inter">ALBUM OF THE WEEK</p>
-        <h2 class="text-text text-8xl pb-2">Facelift</h2>
+        <h2 class="text-text text-4xl sm:text-5xl md:text-6xl pb-2">Facelift</h2>
         <p class="text-lg inter">
           Fresh, exciting, and utterly surprising reinterpretations of Talking
           Head's seminal album Stop Making Sense
@@ -61,19 +61,22 @@
       </div>
     </section>
 
-    <section class="relative grid grid-cols-2 -top-14 gap-4 max-w-6xl mx-auto">
-      <div class="space-y-12 pl-16">
-        <p class="text-text text-5xl mt-48 leading-relaxed max-w-[450px]">
+    <section class="relative grid md:grid-cols-2 lg:-top-14 md::-top-8 gap-4 max-w-6xl mx-auto">
+      <div class="space-y-12 md:pl-16">
+        <p
+          class="text-text md:text-5xl text-3xl mt-12 md:mt-32 lg:48 leading-relaxed md:max-w-[450px] text-center md:text-left">
           Ultimately, the album's eclectic and varied nature is both its
           greatest strength and greatest weakness
         </p>
-        <img class="max-w-[500px]" src="./assets/images/chain.png" alt="chain" />
-        <h2 class="text-text text-9xl pb-2 max-w-[500px]">Alice in Chains</h2>
-        <img class="max-w-[500px]" src="./assets/images/chain.png" alt="chain" />
+        <img class="max-w-[500px] w-full mx-auto" src="./assets/images/chain.png" alt="chain" />
+        <h2 class="text-text text-4xl md:text-5xl lg:text-9xl pb-2 md:max-w-[500px] text-center md:text-left">
+          Alice in Chains
+        </h2>
+        <img class="max-w-[500px] w-full mx-auto" src="./assets/images/chain.png" alt="chain" />
       </div>
       <div class="flex flex-col items-center inter">
         <img src="./assets/images/hero2.png" alt="music-card" width="540" />
-        <div class="relative -top-[350px]">
+        <div class="relative -top-[200px]  lg:-top-[350px]">
           <h1 class="text-lg font-bold mb-4">Tracks:</h1>
           <ul class="space-y-2 text-lg leading-loose">
             <li><span class="font-bold">1.1</span> We Die Young</li>
@@ -95,17 +98,19 @@
       </div>
     </section>
 
-    <section class="w-full min-h-[500px] bg-[url('./assets/images/shirts.png')] mt-12 bg-no-repeat bg-cover bg-center">
+    <section
+      class="w-full min-h-[500px] bg-[url('./assets/images/shirts.png')] md:mt-12 bg-no-repeat bg-cover bg-center">
       <div class="relative max-w-6xl mx-auto w-full min-h-[500px]">
-        <img class="absolute -top-64 left-0 z-10" src="./assets/images/shirt.png" alt="Left Image" width="600" />
-        <img class="absolute right-0 bottom-0" src="./assets/images/model_with_shirt.png" alt="Right Image"
-          width="550" />
+        <img class="absolute -top-32 sm:-top-64 left-0 z-10" src="./assets/images/shirt.png" alt="Left Image"
+          width="600" />
+        <img class="absolute right-0 bottom-0 hidden lg:block" src="./assets/images/model_with_shirt.png"
+          alt="Right Image" width="550" />
       </div>
     </section>
 
     <section class="bg-nav">
-      <section class="grid grid-cols-[1fr_300px] p-16 gap-16 max-w-6xl mx-auto">
-        <div class=" ">
+      <section class="grid grid-cols-2 md:grid-cols-[1fr_300px] p-16 gap-16 max-w-6xl mx-auto">
+        <div class="col-span-2 md:col-span-1">
           <h2 class="text-primary text-5xl pb-16 font-bold">WHO ARE YOU?</h2>
           <h2 class="text-primary text-4xl leading-relaxed max-w-[450px]">
             It’s been a long nine years since the last Offspring album was
@@ -113,12 +118,15 @@
           </h2>
         </div>
         <div class=" ">
-          <p class="bg-primary p-2 max-w-[300px] inter text-nav text-lg mb-16">
+          <p class="bg-primary p-2 max-w-[300px] inter text-nav text-lg mb-16 hidden md:block">
             Latest posts
           </p>
           <img src="./assets/images/eddie-vedder 1.png" alt="" width="300" />
         </div>
-        <img class="row-span-2 max-w-[450px] w-full" src="./assets/images/offspring 1.png" alt="" />
+        <div class="md:max-w-[450px] md:row-span-2 ">
+          <img class="w-full aspect-square object-cover object-top rounded-2xl md:object-fill md:aspect-auto"
+            src="./assets/images/offspring 1.png" alt="" />
+        </div>
         <img src="./assets/images/Potis 1.png" alt="" width="300" />
         <img src="./assets/images/the-more-things-change 1.png" alt="" width="300" />
       </section>
@@ -157,8 +165,8 @@
         </div>
       </form>
 
-      <h6 class="text-6xl text-nav">Rock on Vinyl</h6>
-      <div class="flex justify-between gap-8">
+      <h6 class="text-3xl md:text-6xl text-nav">Rock on Vinyl</h6>
+      <div class="flex justify-between gap-8 flex-wrap">
         <div class="text-center">
           <img src="./assets/images/cd1.png" alt="" />
           <p class="pt-4">Golden Slumbers</p>
